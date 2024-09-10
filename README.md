@@ -55,7 +55,7 @@ GOOGLE_APPLICATION_CREDENTIALS=/run/secrets/gcp_service_account_key.json
      -p 8000:8000 `
      --env-file .env `
      -v ./secrets/<your_service_account_name>.json:/run/secrets/gcp_service_account_key.json:ro `
-     dockerimage-phase
+     dockerimage-nutrientextractor
    ```
 
    - `-v ./secrets/<your_service_account_name>.json:/run/secrets/gcp_service_account_key.json:ro`: This command mounts the service account file from your local machine into the container's `/run/secrets/gcp_service_account_key.json` path.
@@ -86,7 +86,7 @@ GOOGLE_APPLICATION_CREDENTIALS=/run/secrets/gcp_service_account_key.json
    Use the following command to build the Docker image:
 
    ```bash
-   docker build -t dockerimage-phase2 .
+   docker build -t dockerimage-nutrientextractor .
    ```
 
 5. **Run the Docker Container:**
