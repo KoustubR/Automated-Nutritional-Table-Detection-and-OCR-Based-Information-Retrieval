@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Cropper & Nutritional Info Extractor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Upload and Crop Image</h1>
+    <form id="upload-form">
+        <input type="file" id="file-input" accept="image/*" required>
+        <button type="submit">Upload and Extract Nutritional Info</button>
+    </form>
+
+    <div id="content-container" style="display: none;" class="container">
+        <div>
+            <h2>Cropped Image</h2>
+            <img id="cropped-image" alt="Cropped Image" style="display: none;">
+        </div>
+    
+        <div>
+            <h2>Nutritional Information</h2>
+            <div id="nutrient-info"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
