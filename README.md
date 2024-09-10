@@ -99,7 +99,7 @@ GOOGLE_APPLICATION_CREDENTIALS=/run/secrets/gcp_service_account_key.json
      -p 8000:8000 `
      --env-file .env `
      -v ./secrets/<your_service_account_name>.json:/run/secrets/gcp_service_account_key.json:ro `
-     dockerimage-phase2
+     dockerimage-nutrientextractor
    ```
 
 6. **Access the Application:**
