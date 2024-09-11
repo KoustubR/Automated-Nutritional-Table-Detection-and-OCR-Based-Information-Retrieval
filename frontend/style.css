@@ -34,8 +34,8 @@ button:hover {
 }
 
 img {
-  max-width: 45%;
-  height: auto;
+  height: 400px;
+  width:400px;
 }
 
 table {
